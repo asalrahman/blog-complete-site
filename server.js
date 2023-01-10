@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+var port = 6002;
 var expressLayouts = require('express-ejs-layouts');
 var bodyParser = require('body-parser');
 var methodOverride= require('method-override');
@@ -59,6 +60,6 @@ app.get('/a',async(req,res)=>{
   res.render('articles/index',{articles: articles})
 });
 
-const port = 6002;
+
 
 app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:$(port)`));
