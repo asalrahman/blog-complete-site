@@ -1,0 +1,32 @@
+{
+  "name": "blog-complete",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+      "start": "node server.js",
+      "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asalrahman/blog-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asalrahman/blog-site/issues"
+  },
+  "homepage": "https://github.com/asalrahman/blog-site#readme",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "ejs-layouts": "^0.0.1",
+    "express": "^4.18.2",
+    "express-sessions": "^1.0.6",
+    "mongoose": "^6.8.3",
+    "rxpress": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

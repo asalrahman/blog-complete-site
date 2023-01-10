@@ -59,4 +59,6 @@ app.get('/a',async(req,res)=>{
   res.render('articles/index',{articles: articles})
 });
 
-app.listen(6002);
+const port = 6002;
+
+app.listen(process.env.PORT || port, () => console.log(`Example app listening at http://localhost:$(port)`));
