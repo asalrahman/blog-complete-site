@@ -10,11 +10,11 @@ var Article = require('./models/article');
 var session = require('express-session');
 var cookieParser  =require('cookie-parser');
 var flash = require('connect-flash');
+var dotenv = require('dotenv')
 
+dotenv.config();
 
-
-const mongoose = require("mongoose");
-mongoose.connect('mongodb://localhost/bloguser');
+const dbConnection = require("./db");
 
 app.use(cookieParser());
 
